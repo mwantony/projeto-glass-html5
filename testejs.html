@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Acenda a Lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" alt="" onmousemove="mudaLampada('Acendeu!')" id="luz" onmouseout="mudaLampada('Acenda a Lampada')"
+    onclick="mudaLampada('Quebrou!')">
+    <script>
+        let titulo = document.getElementById('titulo')
+        let quebrado = false
+        let imagem = document.querySelector('img#luz')
+        function mudaLampada(tipo) {
+            if (quebrado == false) {
+                titulo.innerHTML = tipo
+                if (tipo == 'Quebrou!') 
+                quebrado = true
+            }
+
+        }
+    </script>
+</body>
+</html>

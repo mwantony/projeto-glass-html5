@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+body {
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#interface {
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+    padding: 10px;
+}
+
+.foto-legenda {
+    border: 8px;
+    border-color: white;
+    border-style: solid;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 1px 1px 4px black;
+}
+
+.foto-legenda > img {
+    max-width: 100%;
+}
+
+.foto-legenda > figcaption {
+    position: absolute;
+    padding: 10px;
+    top: 0px;
+    background-color: rgb(0, 0, 0);
+    opacity: .0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    box-sizing: border-box;
+}
+
+.foto-legenda > figcaption:hover {
+    opacity: .5;
+}
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 500px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+#icone {
+    position: absolute;
+    left: 780px;
+    top: 70px;
+}
+
+#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+#lateral h1 {
+    font-family: 'FonteLogo',sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: white;
+    padding: 5px;
+}
+
+#cabecalho h1 {
+    font-family: 'FonteLogo';
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin: auto;
+}
+
+#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 7px;
+}
+
+.ce{
+    color: white;
+    background-color: #606060;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.cd{
+    background-color: #cecece;
+}
+
+#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+#rodape p {
+    text-align: center;
+}
+
+#noticia-principal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+
+}
+
+.direita {
+    text-align: right;
+}
+
+
+
